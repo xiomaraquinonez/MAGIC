@@ -1,2 +1,3 @@
 # MAGIC
 # Xiomara
+# Mentor: Jo
