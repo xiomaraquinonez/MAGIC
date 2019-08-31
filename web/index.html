@@ -4,7 +4,6 @@
 
 <title>news 4 u</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 /* Set the size of the div element that contains the map */
@@ -15,6 +14,7 @@
 
 body {
 background-color: #edd35f;
+padding: 70px;
 }
 
 * {
@@ -80,10 +80,12 @@ background-color: #edd35f;
 
 /* slideshow */
 * {
+  border-radius: 25px;
   box-sizing: border-box;
 }
 
 img {
+  border-radius: 25px;
   vertical-align: middle;
 }
 
@@ -170,19 +172,31 @@ img {
   opacity: 1;
 }
 </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-<div class="tab">
-  <button class="tablinks" onclick="openPage(event, 'home')">Home</button>
-  <button class="tablinks" onclick="openPage(event, 'issue')" >Current Issues</button>
-  <button class="tablinks" onclick="openPage(event, 'involvement')" >Get Involved</button>
-  <button class="tablinks" onclick="openPage(event, 'subscribe')" >Subscribe</button>
-</div>
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">News 4 U</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="tablinks"><a href="#" onclick="openPage(event, 'home')">Home</a></li>
+      <li class="tablinks"><a href="#" onclick="openPage(event, 'issue')" >Current Issues</a></li>
+      <li class="tablinks"><a href="#"onclick="openPage(event, 'involvement')" >Get Involved</a></li>
+      <li class="tablinks"><a href="#" onclick="openPage(event, 'contact')" >Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div id="home" class="page">
-  <h1 style='color:white'><center>news 4 u</center></h1>
+  <!-- <h1 style='color:black'><center>News 4 U</center></h1> -->
   <p><center><b>Hello, welcome to news 4 u. news 4 u is a website catered to teenagers and is meant to present world-wide issues to teenagers, as well as ways for them to get involved.</b></center></p> 
 
 
@@ -282,9 +296,24 @@ Adve">
         <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 
     <div id="map"></div>
+</div>
     
-<div id="subscribe" class="page">
-	 <h3>Fill out this form</h3>
+<!-- form -->
+<div id="contact" class="page">
+<h1><center>Fill out this form to ask any questions and/or provide any feedback on the website!<h1>
+</center>
+
+<form action="/action_page.php">
+<!-- change action -->
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 </div>
 
 <script>
@@ -363,4 +392,3 @@ function showSlides(n) {
 
 </body>
 </html>
-
