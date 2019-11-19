@@ -522,7 +522,7 @@ function showSlides(n) {
   mapboxgl.accessToken = 'pk.eyJ1IjoieGlvbWFyYXF1aW5vbmV6IiwiYSI6ImNrMmNlZ2U1dzR0aGozbXBpb2VjdTB0Y3QifQ.OjryUeeC-_No5MYO5w6BfA';
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/xiomaraquinonez/ck2cfmikz01ze1cllb5fk4pcu',
+    style: 'mapbox://styles/xiomaraquinonez/ck36ggta60b9n1crzaa9tlf0k',
     center: [-121.886330, 37.338207],
     zoom: 13
   });
@@ -545,8 +545,8 @@ map.on('load', function () {
         {
           "type": "Feature",
           "properties": {
-            "description": "<strong>Make it Mount Pleasant</strong><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
-            "icon": "theatre"
+            "description": "<strong>San Jose, California</strong><p>San Jose has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
           },
           "geometry": {
             "type": "Point",
@@ -554,7 +554,78 @@ map.on('load', function () {
               -121.886330, 37.338207
             ]
           }
-        }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "description": "<strong>San Francisco, California</strong><p>San Francisco has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.419418, 37.774929
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "description": "<strong>New York City, New York</strong><p>New York has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -74.005974, 40.712776
+              // longitude, latitude
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "description": "<strong>Chicago, Illinois</strong><p>Chicago has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -87.629799, 41.878113
+              // longitude, latitude
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "description": "<strong>Boston, Massachusetts</strong><p>Boston has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -71.058884, 42.360081
+              // longitude, latitude
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "description": "<strong>Los Angeles, California</strong><p>Los Angeles has organizations to let you advocate throughout the city.</p>",
+            "icon": "town-hall"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -118.243683, 34.052235
+              // longitude, latitude
+            ]
+          }
+        },
+
+
       ]
     }
   },
